@@ -12,7 +12,7 @@ USER factorio
 
 ENV HOME /opt/factorio
 ENV SAVEFILE /opt/factorio/saves/factorio_save.zip
-
+ENV SERVER_SETTINGS /opt/factorio/data/server-settings.json
 WORKDIR /opt/factorio
 
 RUN  wget -q -O /tmp/factorio.tar.gz https://www.factorio.com/get-download/0.16.6/headless/linux64 \
