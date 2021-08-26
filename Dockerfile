@@ -17,7 +17,7 @@ ENV MAP_SETTINGS /opt/factorio/data/map-settings.json
 ENV MAP_GEN_SETTINGS /opt/factorio/data/map-gen-settings.json
 WORKDIR /opt/factorio
 
-RUN  wget -q -O /tmp/factorio.tar.gz https://www.factorio.com/get-download/0.16.7/headless/linux64 \
+RUN  wget -q -O /tmp/factorio.tar.gz https://www.factorio.com/get-download/latest/headless/linux64 \
   && tar -xf /tmp/factorio.tar.gz -C /opt \
   && rm -rf /tmp/factorio.tar.gz && mkdir /opt/factorio/mods
 
